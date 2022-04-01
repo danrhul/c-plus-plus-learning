@@ -19,5 +19,14 @@ int main() {
     std::cout<<"pInt: "<<pInt<<std::endl;
     std::cout<<"*pInt: "<<*pInt<<std::endl;
 
+    int array[] = {0,2,3,4,5}; // array is a pointer to actual array
+    int *pArray = array;
+    // [[xxx]]: https://en.cppreference.com/w/cpp/language/attributes
+    for ([[maybe_unused]] int value : array) {
+        std::cout<<*pArray<<std::endl;
+
+        pArray++;
+    }
+
     return 0;
 }
