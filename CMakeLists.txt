@@ -4,4 +4,4 @@ project(c_plus_plus_learning)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(c_plus_plus_learning
-        hello_word.cpp)
+        switch_case.cpp)
